@@ -36,3 +36,11 @@ minikube service wisecow-service -n wisecow --url
 echo "$(minikube ip)  wisecow.local" | sudo tee -a /etc/hosts
 curl -k https://wisecow.local
 ```
+
+---
+
+## Problem Statement 2 — Monitoring Scripts
+
+See [problem-statement-2/](./problem-statement-2/) for:
+- System Health Monitoring Script
+- Application Health Checker Script
