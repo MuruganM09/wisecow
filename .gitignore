@@ -1,0 +1,4 @@
+certs/tls.key
+.env
+.DS_Store
+Thumbs.db
