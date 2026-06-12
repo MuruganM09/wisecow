@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y \
 ENV PATH=$PATH:/usr/games
 WORKDIR /app
 COPY --chown=wisecow:wisecow wisecow.sh .
-RUN chmod +x wisecow.sh
+RUN chmod +x wisecow.sh && chmod 777 /app
 USER wisecow
 EXPOSE 4499
 HEALTHCHECK --interval=30s --timeout=10s --retries=3 \
